@@ -1,6 +1,8 @@
-<h1 align="lef">Discrete Markov Bridge</h1>
+<h1 align="center">Discrete Markov Bridge</h1>
 <div align="center">
  <a href=""><img src="https://img.shields.io/badge/Arxiv-DMB-b31b1b.svg?logo=arXiv" alt=""></a>
+  <a href=""><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/model-on-hf-sm-dark.svg" alt=""></a>
+
 </div>
 
 # ![DMB](./img/CTMB.jpg)
