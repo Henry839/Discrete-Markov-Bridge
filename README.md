@@ -1,12 +1,13 @@
-<h3 align="center">Discrete Markov Bridge</h3>
+<h1 align="lef">Discrete Markov Bridge</h1>
+<div align="center">
+ <a href=""><img src="https://img.shields.io/badge/Arxiv-DMB-b31b1b.svg?logo=arXiv" alt=""></a>
+</div>
 
 # ![DMB](./img/CTMB.jpg)
 
 *This is the code for implementation of Discrete Markov Bridge, for description and theory, refer to the paper.*
 
-<div align="center">
- <a href=""><img src="https://img.shields.io/badge/Arxiv-DMB-b31b1b.svg?logo=arXiv" alt=""></a>
-</div>
+
 
 
 ## Introduction
@@ -34,3 +35,52 @@ cd src
 sh scripts/example.sh
 ```
 For understanding of the shell scripts, please check [parse-file](./src/parser.py) for description of the args.
+
+The example shell scripts
+```bash
+CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" torchrun --nproc_per_node=8 --master_port=29501 main_ddp.py \
+    --ngpus 8 \
+    --sche_name "loglinear" \ # diffusion scheduler
+    --sigma_min 1e-4 \
+    --sigma_max 20 \
+    --Q_lr 1e-3 \ # learning rate for matrix learning
+    --Q_weight_decay 1e-2 \
+    --Q_initialization 'gather' \
+    --Q_epochs 15 \
+    --vocab_size 27 \
+    --score_epoch 10 \
+    --hidden_size 768 \ # transformer args
+    --time_hidden_size 128 \ # transformer args
+    --dropout 0.1 \ # transformer args
+    --n_blocks 12 \ # transformer args
+    --n_heads 12 \ # transformer args
+    --score_lr 3e-4 \ # score learning rate
+    --score_warmup_steps 2500 \
+    --mu_train_dataset_name 'text8' \ # training
+    --mu_eval_dataset_name 'text8' \ # eval
+    --mu_test_dataset_name 'text8' \ # test
+    --cache_dir './cache/' \
+    --seqlen 256 \
+    --score_accum 1 \
+    --score_train_batch_size 512 \
+    --score_eval_batch_size 512 \
+    --score_grad_clip 1.0 \
+    --sample_batch_size 512 \
+    --Q_accum 1 \
+    --Q_train_batch_size 512 \
+    --eval_times 1000 \
+    --ema 0.9999 \
+    --epoch 1000 \
+    --run_name 'text8' \
+    --random_seed 42 \
+
+```
+
+## Citation
+```bibtex
+TBA
+```
+
+## Contact
+* If you have any questions, please send me an email at: lihengli@stu.pku.edu.cn
+
