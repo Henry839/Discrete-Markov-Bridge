@@ -1,5 +1,6 @@
 <h2 align="center">Discrete Markov Bridge</h2>
 # ![DMB](./img/CTMB.jpg)
+
 *This is the code for implementation of Discrete Markov Bridge, for description and theory, refer to the paper.*
 
 <div align="center">
