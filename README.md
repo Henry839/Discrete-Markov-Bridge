@@ -1,9 +1,13 @@
-<h3 align="center">Discrete Markov Bridge</h3>
+<h2 align="center">Discrete Markov Bridge</h2>
+<div align="center">
+ <a href=""><img src="https://img.shields.io/badge/Arxiv-DMB-b31b1b.svg?logo=arXiv" alt=""></a>
+</div>
+
 
 ## Introduction
 
 # ![DMB](./img/CTMB.jpg)
-*This is the code for implementation of the Discrete Markov Bridge, for description and theory, refer to the paper.*
+*This is the code for implementation of Discrete Markov Bridge, for description and theory, refer to the paper.*
 
 **Discrete Markov Bridge (DMB)** consists of two component: the *Matrix-learning*
 and the *Score-learning*. The *Matrix-learning* process is designed to learn an adaptive transition
@@ -26,3 +30,4 @@ pip install wandb
 cd src
 sh scripts/example.sh
 ```
+For understanding of the shell scripts, please check [parse-file](./src/parser.py) for description of the args.

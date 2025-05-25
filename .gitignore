@@ -36,7 +36,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-cache/
+# cache/
 canine-c/
 
 # PyInstaller

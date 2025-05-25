@@ -1,5 +1,5 @@
-CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" torchrun --nproc_per_node=8 --master_port=29501 main_ddp.py \
-    --ngpus 8 \
+CUDA_VISIBLE_DEVICES="0" torchrun --nproc_per_node=1 --master_port=29501 main_ddp.py \
+    --ngpus 1 \
     --sche_name "loglinear" \
     --sigma_min 1e-4 \
     --sigma_max 20 \
@@ -7,8 +7,6 @@ CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" torchrun --nproc_per_node=8 --master_port
     --Q_weight_decay 1e-2 \
     --Q_initialization 'gather' \
     --Q_epochs 15 \
-    --T 1 \
-    --dt 0.008 \
     --vocab_size 27 \
     --score_epoch 10 \
     --hidden_size 768 \
