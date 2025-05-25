@@ -46,7 +46,7 @@ def get_parser():
     parser.add_argument("--score_train_batch_size", type=int, default=1024)
     parser.add_argument("--score_eval_batch_size", type=int, default=512)
     parser.add_argument("--score_grad_clip", type=float, default=1.0)
-    parser.add_argument("--score_weight_decay", type=float, default=0)
+    parser.add_argument("--score_weight_decay", type=float, default=0.01)
     parser.add_argument("--score_scale_by_sigma", action="store_true")
     parser.add_argument("--score_wd_scheduler", action="store_true")
     parser.add_argument("--score_wd_scheduler_decay_method", type=str, default="smooth")
