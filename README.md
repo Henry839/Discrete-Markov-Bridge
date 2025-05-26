@@ -1,13 +1,11 @@
-<h1 align="center">Discrete Markov Bridge</h1>
-<div align="center">
+<h1 align="left">Discrete Markov Bridge</h1>
+<div align="left">
  <a href=""><img src="https://img.shields.io/badge/Arxiv-DMB-b31b1b.svg?logo=arXiv" alt=""></a>
-  <a href=""><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/model-on-hf-sm-dark.svg" alt=""></a>
-
 </div>
+*This is the code for the implementation of the Discrete Markov Bridge. For description and theory, refer to the [paper]() by [Hengli Li](https://github.com/Henry839), [Yuxuan Wang](https://github.com/patrick-tssn), [Song-Chun Zhu](https://zhusongchun.net/), [Ying Nian Wu](http://www.stat.ucla.edu/~ywu/), and [Zilong Zheng](https://zilongzheng.github.io/).*
 
 # ![DMB](./img/CTMB.jpg)
 
-*This is the code for implementation of Discrete Markov Bridge, for description and theory, refer to the paper.*
 
 
 
