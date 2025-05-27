@@ -1,6 +1,6 @@
 <h1 align="left">Discrete Markov Bridge</h1>
 <div align="left">
- <a href=""><img src="https://img.shields.io/badge/Arxiv-DMB-b31b1b.svg?logo=arXiv" alt=""></a>
+ <a href="https://arxiv.org/abs/2505.19752"><img src="https://img.shields.io/badge/Arxiv-DMB-b31b1b.svg?logo=arXiv" alt=""></a>
 </div>
 
 This is the code for the implementation of the Discrete Markov Bridge. For description and theory, refer to the [paper]() by [Hengli Li](https://github.com/Henry839), [Yuxuan Wang](https://github.com/patrick-tssn), [Song-Chun Zhu](https://zhusongchun.net/), [Ying Nian Wu](http://www.stat.ucla.edu/~ywu/), and [Zilong Zheng](https://zilongzheng.github.io/).
