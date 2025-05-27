@@ -82,7 +82,15 @@ CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" torchrun --nproc_per_node=8 --master_port
 
 ## Citation
 ```bibtex
-TBA
+@misc{li2025discretemarkovbridge,
+      title={Discrete Markov Bridge}, 
+      author={Hengli Li and Yuxuan Wang and Song-Chun Zhu and Ying Nian Wu and Zilong Zheng},
+      year={2025},
+      eprint={2505.19752},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.19752}, 
+}
 ```
 
 ## Contact
